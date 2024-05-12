@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ini"
+        android:layout_width="291dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="342dp"
+        android:backgroundTint="#F4B251"
+        android:text="初期化"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_se" />
+
+    <Switch
+        android:id="@+id/bl_wh_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="62dp"
+        android:text="黒白"
+        app:layout_constraintBottom_toTopOf="@+id/md_Switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ba_cs"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/md_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="62dp"
+        android:text="月日"
+        app:layout_constraintBottom_toTopOf="@+id/onof_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sd_week"
+        app:layout_constraintTop_toBottomOf="@+id/bl_wh_switch" />
+
+    <Switch
+        android:id="@+id/onof_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="70dp"
+        android:text="オンオフ"
+        app:layout_constraintBottom_toTopOf="@+id/ini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/no_se"
+        app:layout_constraintTop_toBottomOf="@+id/md_Switch" />
+
+    <TextView
+        android:id="@+id/ba_cs"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="37dp"
+        android:text="背景色"
+        app:layout_constraintBottom_toTopOf="@+id/sd_week"
+        app:layout_constraintEnd_toStartOf="@+id/bl_wh_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:id="@+id/sd_week"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="37dp"
+        android:text="週の開始曜日"
+        app:layout_constraintBottom_toTopOf="@+id/no_se"
+        app:layout_constraintEnd_toStartOf="@+id/md_Switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ba_cs"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:id="@+id/no_se"
+        android:layout_width="214dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="37dp"
+        android:text="通知設定"
+        app:layout_constraintBottom_toTopOf="@+id/ini"
+        app:layout_constraintEnd_toStartOf="@+id/onof_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd_week"
+        android:background="@drawable/border"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

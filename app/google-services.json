@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "296539502496",
+    "project_id": "calender-database-99b71",
+    "storage_bucket": "calender-database-99b71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296539502496:android:dcebb8c52b7770b77b16c5",
+        "android_client_info": {
+          "package_name": "com.websarva.wings.android.carendersample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU8ylGCdtapNVWLrCaQhdXligdkmQuqt8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

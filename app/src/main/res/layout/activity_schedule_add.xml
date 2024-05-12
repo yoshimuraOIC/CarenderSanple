@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="311dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/border"
+        android:hint="備考"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAdd1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectname" />
+
+    <EditText
+        android:id="@+id/subjectname"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/border"
+        android:hint="課題"
+        app:layout_constraintBottom_toTopOf="@+id/notes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/End" />
+
+    <EditText
+        android:id="@+id/Start"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/border"
+        android:hint="開始日"
+        app:layout_constraintBottom_toTopOf="@+id/End"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/End"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/border"
+        android:hint="終了日"
+        app:layout_constraintBottom_toTopOf="@+id/subjectname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Start" />
+
+    <Button
+        android:id="@+id/clu_2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="main"
+        android:text="メイン"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/time2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="zikanwari"
+        android:text="時間割"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ser2"
+        app:layout_constraintStart_toEndOf="@+id/clu_2" />
+
+    <Button
+        android:id="@+id/res2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="登録"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ser2" />
+
+    <Button
+        android:id="@+id/ser2"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onSearch"
+        android:text="検索"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/res2"
+        app:layout_constraintStart_toEndOf="@+id/time2" />
+
+    <Button
+        android:id="@+id/buttonAdd1"
+        android:layout_width="372dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="onAdd"
+        android:text="追加"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

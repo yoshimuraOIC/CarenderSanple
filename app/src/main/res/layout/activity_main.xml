@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="405dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/subjectmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonsetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="682dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage"
+        android:onClick="onSetting"/>
+
+    <TextView
+        android:id="@+id/subjectmain"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border"
+        android:text="課題"
+        app:layout_constraintBottom_toTopOf="@+id/weather_FC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar" />
+
+    <TextView
+        android:id="@+id/weather_FC"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="95dp"
+        android:background="@drawable/border"
+        android:text="お天気予報"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectmain" />
+
+    <Button
+        android:id="@+id/res1"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onSchedule"
+        android:text="登録"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ser1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ser1"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginBottom="8dp"
+        android:text="検索"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/res1"
+        app:layout_constraintStart_toEndOf="@+id/time1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onSearch"/>
+
+    <Button
+        android:id="@+id/time1"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginBottom="8dp"
+        android:text="時間割"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ser1"
+        app:layout_constraintStart_toEndOf="@+id/clu_1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onTimetable"/>
+
+    <Button
+        android:id="@+id/clu_1"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginBottom="8dp"
+        android:text="メイン"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/time1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
